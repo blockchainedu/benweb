@@ -65,7 +65,12 @@ b, strong {
   font-weight: 600;
   color: #273f59; }
 
-sup {
+.team-box {
+  height: 485px !important;
+  min-height: 485px !important;
+}
+
+  sup {
   top: -1.3em; }
 
 sub {
