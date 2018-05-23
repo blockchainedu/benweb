@@ -13,6 +13,78 @@ body {
 img {
   max-width: 100%; }
 
+.qr-block {
+  margin: 0 auto;
+  padding: 10%;
+}
+.paypal-button {
+ padding: 0 120px;
+}
+#background {
+  background: 
+    /*linear-gradient(purple 0%, red 90%),*/
+    linear-gradient(to bottom, rgba(111,40,204,1) 0%,rgba(35,83,138,1) 52%,rgba(9,173,188,1) 100%),
+    linear-gradient(to bottom, rgba(0,0,0,.1) 0%,rgba(14,14,14,1) 100%),
+    url('../img/foundation.jpg');
+  background-blend-mode: color, multiply;
+}
+#about {
+  background: 
+    /*linear-gradient(purple 0%, red 90%),*/
+    linear-gradient(to bottom, rgba(111,40,204,1) 0%,rgba(35,83,138,1) 52%,rgba(9,173,188,1) 100%),
+    linear-gradient(to bottom, rgba(0,0,0,.1) 0%,rgba(14,14,14,.45) 100%),
+    url('../img/foundation.jpg');
+  background-blend-mode: color, multiply;
+}
+
+#test {
+  background: 
+    /*linear-gradient(purple 0%, red 90%),*/
+    linear-gradient(-45deg, rgba(111,40,204,1) 0%,rgba(35,83,138,1) 52%,rgba(9,173,188,1) 100%),
+    linear-gradient(to bottom, rgba(0,0,0,.1) 0%,rgba(14,14,14,1) 100%),
+    url('../img/grad-node.png');
+  background-blend-mode: color, multiply;
+  background-size: cover;
+}
+
+#test2 {
+  background: 
+    /*linear-gradient(purple 0%, red 90%),*/
+    linear-gradient(-45deg, rgba(111,40,204,1) 0%,rgba(35,83,138,1) 52%,rgba(9,173,188,1) 100%),
+    linear-gradient(to bottom, rgba(0,0,0,.1) 0%,rgba(14,14,14,1) 100%),
+    url('../img/nodes.jpg');
+  background-blend-mode: color, multiply;
+  background-size: cover;
+}
+#test3 {
+  background: 
+    /*linear-gradient(purple 0%, red 90%),*/
+    linear-gradient(-45deg, rgba(111,40,204,1) 0%,rgba(35,83,138,1) 52%,rgba(9,173,188,1) 100%),
+    linear-gradient(to bottom, rgba(0,0,0,.1) 0%,rgba(14,14,14,1) 100%),
+    url('../img/triangles.jpg');
+  background-blend-mode: color, multiply;
+  background-size: cover;
+}
+
+#donatebg-old {
+  background: #8B3AC6;
+  background-image: -webkit-linear-gradient(left, #8B3AC6 0%, #4D3399 100%);
+  background-image: -o-linear-gradient(left, #8B3AC6 0%, #4D3399 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#8B3AC6), to(#4D3399));
+  background-image: linear-gradient(to right, #8B3AC6 0%, #4D3399 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8B3AC6', endColorstr='#FF4D3399', GradientType=1);
+}
+
+#aboutbg-old{
+  background:url(assets/img/about/hero.png);
+}
+
+.paypal-button form input {
+  border: none;
+  max-width: 200px;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Dosis", sans-serif;
   color: #273f5b;
@@ -603,7 +675,7 @@ input, textarea {
   box-shadow: 0 5px 40px 0 rgba(32, 101, 169, 0.2);
   color: #597187 !important; }
   .btn-white:hover {
-    background: #455768;
+    background: #8e70e7;
     color: #fff !important; }
 
 .btn-outline-white {
@@ -3844,7 +3916,9 @@ input, textarea {
   color: #a282e3 !important; }
 
 .text-yellow {
-  color: #FFAD00 !important; }
+  /* color: #FFAD00 !important;  */
+  color: #ff862b !important;
+}
 
 .text-green {
   color: #2CD44A !important; }
