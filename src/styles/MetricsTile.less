@@ -1,0 +1,29 @@
+.MetricsTile {
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px @white;
+    .row-nowrap;
+    
+    width: @tileWidth;
+    height: @tileHeight;
+    .sizeMargin();
+
+    section {
+        .flex-center;
+        .column;
+        .align-center;
+    }
+
+    h2 {
+        .flex;
+    }
+    p {
+        .flex-shrink;
+        .smallFont;
+    }
+}
+
+@media screen and (min-width: @sm) {
+    .MetricsTile {
+        
+    }
+}

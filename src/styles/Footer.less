@@ -1,0 +1,32 @@
+.Footer {
+    .column;
+    .flex;
+    width: 100%;
+    background-color: @light-blue;
+
+    .features-container {
+        .flex;
+        .row-nowrap;
+        .align-center;
+        .sizePadding(3, 0);
+        > div {
+            .flex;
+        }
+    }
+    .tagline-container {
+        .flex-self;
+        background-color: @white;
+        .sizePadding(2, 0);
+        p {
+            color: @dark-gray;
+            text-align: center;
+            .sizeFont(.7);
+        }
+    }
+}
+
+@media screen and (min-width: @sm) {
+    .Footer {
+        
+    }
+}

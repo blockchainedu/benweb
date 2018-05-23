@@ -1,0 +1,20 @@
+.Button {
+    .column;
+    .sizeMargin();
+    .sizePadding(1, 2);
+    .card(3);
+    .transition(all, 0.25s, ease);
+    background-color: @primary;
+    cursor: pointer;
+    width: 8rem;
+    border-radius: 30px;
+    &:hover {
+        .card(1);
+    }
+    p {
+        .smallFont;
+        .flex-center;
+        color: @dark-gray;
+        text-align: center;
+    }
+}

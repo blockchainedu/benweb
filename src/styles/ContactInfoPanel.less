@@ -1,0 +1,53 @@
+.ContactInfoPanel {
+    color: @dark-gray;
+    h6 {
+        .sizeFont(1.1);
+        .sizeMargin(1, 1);
+    }
+    .divider {
+        border-radius: 6px;
+        background-color: @accent;
+        width: 4rem;
+        height: 4px;
+        .sizeMargin(0, 1);
+
+    }
+    .main-container {
+        .sizePadding(2, 0);
+        .Icon {
+            color: @accent;
+            font-size: 0.75rem;
+            .flex;
+        }
+        p {
+            .flex(10);
+            .smallFont;
+        }
+    }
+    .social-container {
+        .social-link {
+            height: @roundButtonSize;
+            width: @roundButtonSize;
+            background-color: @white;
+            border-radius: 1000px;
+            cursor: pointer;
+            .sizeMargin(0, 0.5);
+            .column;
+            .align-center;
+            svg {
+                .flex-center;
+                color: @blue-gray;
+                .transition(color, 0.2s);
+            }
+            &:hover svg {
+                color: @blue;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: @sm) {
+    .ContactInfoPanel {
+        
+    }
+}

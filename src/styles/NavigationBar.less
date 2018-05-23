@@ -1,0 +1,41 @@
+.NavigationBar {
+    .sizePadding(0, 1);
+}
+
+@media screen and (min-width: @sm) {
+    .NavigationBar {
+        .sizePadding(0, 10);
+        .row-nowrap;
+
+        height: @navBarHeight;
+        background-color: @transparent;
+        z-index: 10;
+        position: fixed;
+        width: 100%;
+
+        & + div {
+            padding-top: @navBarHeight;
+        }
+
+        
+        .logo-container {
+            .flex;
+            .column;
+            .sizePadding(2, 0);
+        }
+        .logo {
+            background-image: url('/images/logo-default.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: @navBarHeight;
+            width: @navBarHeight * 2;
+        }
+
+        .nav-container {
+            .flex-shrink;
+            .row-nowrap;
+            .align-center;
+        }
+    }
+}
