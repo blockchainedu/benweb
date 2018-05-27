@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import Base from './Base';
+import BackgroundShader from './BackgroundShader';
 import Footer from './Footer';
 import PageTitle from './PageTitle';
 

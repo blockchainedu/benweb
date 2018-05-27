@@ -1,0 +1,29 @@
+.EmailSubmission {
+    .sizeMargin(2, 0);
+    border-radius: 50px;
+    background-color: @white;
+    width: 20rem;
+    
+    form {
+        .row-nowrap;
+    }
+    .Icon {
+        color: @accent;
+        .flex-self;
+        .sizePadding(1, 2);
+    }
+    .TextInput {
+        .flex;
+    }
+
+    .submit-button {
+        cursor: pointer;
+        .flex-self;
+    }
+}
+
+@media screen and (min-width: @sm) {
+    .EmailSubmission {
+        
+    }
+}
