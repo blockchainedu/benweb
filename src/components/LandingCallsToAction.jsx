@@ -6,10 +6,13 @@ import Base from './Base';
 import Button from './Button';
 
 class LandingCallsToAction extends Base {
+    handleJoinBen() {
+        window.open('https://bit.ly/BENdiscord', '_blank')
+    }
     render() {
         return (
             <div className='LandingCallsToAction'>
-                <Button className='join'>
+                <Button onClick={this.handleJoinBen} className='join'>
                     <p>Join BEN</p>
                 </Button>
                 <Button onClick={this.props.goToDonate}>
