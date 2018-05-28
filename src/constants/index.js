@@ -14,6 +14,11 @@ export const NAVIGATION = {
             imageUrl: null
         },
         {
+            text: 'About',
+            routes: ['/about'],
+            imageUrl: null
+        },
+        {
             text: 'Team',
             routes: ['/team'],
             imageUrl: null
