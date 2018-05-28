@@ -1,0 +1,41 @@
+.CryptoDonationTile {
+    .column;
+    .align-center;
+    background-color: @white;
+    color: @dark-gray;
+    width: 40%;
+    margin: @largeRem auto;
+    border-radius: 4px;
+    .card(3, @gray);
+    .sizePadding(2, 0);
+
+    .coin-image {
+        width: 5rem;
+        height: 5rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        .sizeMargin(1, 0);
+    }
+
+    .address {
+        .sizePadding(1, 0);
+        .sizeMargin(2, 0);
+        border-top: 1px @gray solid;
+        border-bottom: 1px @gray solid;
+        width: 100%;
+        text-align: center;
+        .sizeFont(.75);
+    }
+
+    .qr-block {
+        width: 10rem;
+        height: 10rem;
+        .sizeMargin(3, 1);
+    }
+}
+
+@media screen and (min-width: @sm) {
+    .CryptoDonationTile {
+        
+    }
+}
