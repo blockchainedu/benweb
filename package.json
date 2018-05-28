@@ -41,7 +41,7 @@
     "express-graphql": "github:otech47/express-graphql",
     "forever": "^0.15.3",
     "fs": "0.0.1-security",
-    "fs-extra": "^2.0.0",
+    "fs-extra": "^2.1.2",
     "graphql": "^0.4.9",
     "graphql-bookshelf": "github:otech47/graphql-bookshelf",
     "hoek": "4.2.1",
