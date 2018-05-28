@@ -4,7 +4,7 @@ export const CONTACT_INFO = {
     location: 'San Francisco, CA'
 }
 
-export const CRYPTO_ADDRESSES = [
+export const WALLET_ADDRESSES = [
     {
         name: 'Ethereum',
         address: '0x92a054F55C3B8A47c041D1E378dfd48587eC9e7A',
