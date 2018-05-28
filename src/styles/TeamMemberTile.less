@@ -1,0 +1,59 @@
+.TeamMemberTile {
+    .column;
+    .align-center;
+    background-color: @white;
+    color: @dark-gray;
+    width: 20rem;
+    min-height: 22rem;
+    margin: @largeRem auto;
+    border-radius: 4px;
+    .card(3, @gray);
+    .sizePadding(2, 1);
+
+    .member-image {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 1000px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        .sizeMargin(2, 0);
+    }
+    h6 {
+        .sizeFont()
+    }
+    .title {
+        .sizeFont(.75);
+        .sizeMargin(0.5, 0);
+        color: @gray;
+    }
+    .experience {
+        > p {
+            text-align: center;
+            .sizeFont(.75);
+            .sizeMargin(0.5, 0);
+            color: @dark-gray;
+        }
+    }
+    .social-links {
+        .row;
+        .justify-center;
+        .flex-self;
+        width: 100%;
+        .sizePadding(1, 0);
+        > div {
+            .sizePadding(0.75, 0.75);
+            background-color: @secondary;
+            border-radius: 1000px;
+            cursor: pointer;
+        }
+        svg {
+            color: @blue-gray;
+        }
+    }
+}
+
+@media screen and (min-width: @sm) {
+    .TeamMemberTile {
+        
+    }
+}

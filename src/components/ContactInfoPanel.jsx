@@ -14,16 +14,8 @@ class ContactInfoPanel extends Base {
                 <div className='divider'/>
                 <div className='main-container'>
                     <div className='row-nowrap align-center'>
-                        <Icon faIconName='phone'/>
-                        <p>{CONTACT_INFO.phoneNumber}</p>
-                    </div>
-                    <div className='row-nowrap align-center'>
                         <Icon faIconName='envelope'/>
                         <p>{CONTACT_INFO.email}</p>
-                    </div>
-                    <div className='row-nowrap align-center'>
-                        <Icon faIconName='map-marker'/>
-                        <p>{CONTACT_INFO.location}</p>
                     </div>
                 </div>
                 <ul className='social-container row-nowrap'>
