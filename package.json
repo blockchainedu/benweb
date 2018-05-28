@@ -44,6 +44,7 @@
     "fs-extra": "^2.0.0",
     "graphql": "^0.4.9",
     "graphql-bookshelf": "github:otech47/graphql-bookshelf",
+    "hoek": "4.2.1",
     "imports-loader": "^0.6.5",
     "knex": "^0.12.6",
     "lodash": "^4.16.4",
