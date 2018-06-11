@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
+import { reducer as formReducer } from 'redux-form';
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
 
-import sampleState from './sampleState';
+import contact from './contact';
 
 export default combineReducers({
-    sampleState,
+    contact,
+    form: formReducer,
     routing: routerReducer
 });

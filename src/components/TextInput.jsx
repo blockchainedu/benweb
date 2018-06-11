@@ -5,20 +5,33 @@ import Base from './Base';
 export default class TextInput extends Base {
     constructor(props) {
         super(props);
-       
     }
     render() {
-        const { input, type, className, disabled, placeholder } = this.props;
+        const { input, meta: { touched, error }, name, label, text, type, className, disabled } = this.props;
         
         return (
-            <div className={`TextInput ${className}`}> 
+            <div className={`TextInput ${className || ''}`}> 
                 <input 
-                    {...input}
+                    {...input}  
                     disabled={disabled}
-                    className='input-field'
-                    placeholder={placeholder}
+                    required
+                    className='input_fields'
                     type={type}
-                />     
+                />
+                <label
+                    htmlFor={name} 
+                    className={`main_label ${disabled ? 'disabled' : 'enabled'} `}
+                >
+                    {label}
+                </label>
+                {touched && error &&
+                    <label
+                        className='error_label'
+                        htmlFor={name}
+                    >
+                        {error}
+                    </label>
+                }
             </div>
         );
     }

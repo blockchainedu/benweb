@@ -1,11 +1,17 @@
 .EmailSubmission {
     .sizeMargin(2, 0);
-    border-radius: 50px;
-    background-color: @white;
+    
     width: 20rem;
+
+    p {
+        .sizeMargin();
+        .sizeFont(.7);
+    }
     
     form {
         .row-nowrap;
+        border-radius: 50px;
+        background-color: @white;
     }
     .Icon {
         color: @accent;

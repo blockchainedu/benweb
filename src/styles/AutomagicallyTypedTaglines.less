@@ -1,0 +1,36 @@
+@keyframes typing {
+    from { color: @transparent; }
+    to { color: @yellow; }
+}
+
+.AutomagicallyTypedTaglines {
+    .row-nowrap;
+    .align-center;
+    .sizeMargin(0, 1);
+
+    .Typist {
+        .sizeFont(2);
+        color: @yellow;
+        span {
+            .sizeFont(2);
+            animation-name: typing;
+            animation-duration: 0.5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    }
+
+    .type-cursor {
+        .sizeMargin();
+        width: 2px;
+        height: 30px;
+        background-color: @yellow;
+        
+    }
+}
+
+@media screen and (min-width: @sm) {
+    .AutomagicallyTypedTaglines {
+        
+    }
+}

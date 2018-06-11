@@ -1,11 +1,42 @@
 .TextInput {
     .row;
-    .align-center;
+    align-items: flex-start;
+
     input {
+        .sizePadding(0.75, 0.65);
+        .smallFont;
+        display: block;
+        width: 100%;
+        border: none;
+        box-shadow: unset;
         color: @dark-gray;
-        margin-top: 3px;
+        margin: auto;
     }
-    
+    input:focus {
+        outline: none;
+    }
+    .main_label {
+        color: @gray;
+        .smallFont;
+        position: absolute;
+        pointer-events: none;
+        transition: 0.2s ease all;
+        top: 51%;
+        left: @smallRem;
+        .transform(translate(0, -50%));
+    }
+
+    input:valid ~ .main_label {
+        display: none;
+    }
+
+    .error_label {
+        position: absolute;
+        top: 110%;
+        color: @red;
+        .sizeFont(0.6);
+        left: @smallRem;
+    }
 }
 
 @media screen and (min-width: @sm) {

@@ -8,7 +8,6 @@ import { NAVIGATION } from '../constants';
 
 class NavigationBar extends Base {
     renderNavItem(item, i) {
-        console.log(NavLinkItem)
         return (
             <NavLinkItem
                 key={'nvl-' + i}

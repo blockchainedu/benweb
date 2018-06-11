@@ -1,8 +1,7 @@
 module.exports = {
     // API Access Keys
 
-    SAMPLE_KEYS: {
-        ACCESS_KEY: 'Do not hardcode sensitive API keys',
-        SECRET: 'Use environment variables'
+    SENDGRID: {
+        KEY: process.env.SENDGRID_KEY || 'invalid'
     }
 };

@@ -8,8 +8,6 @@ import Icon from './Icon';
 import LandingTitle from './LandingTitle';
 import LandingCallsToAction from './LandingCallsToAction';
 
-import setlife from '../scripts/setlife'
-
 export default class LandingPage extends Base {
     render() {
         return (

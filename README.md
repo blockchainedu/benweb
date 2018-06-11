@@ -1,14 +1,14 @@
-# SetLife
+# Blockchainedu.org
 
-A React-Node app boilerplate maintained by The SetLife Network
+Build with https://github.com/otech47/setlife-react-node-boilerplate, a React-Node app boilerplate maintained by The SetLife Network
 
 Libaries used: Express, React, Redux, React Router, Webpack
 
 ## Setup
 
-1. Clone the repo `git clone https://github.com/otech47/setlife-react-node-boilerplate`
+1. Clone the repo `git clone https://github.com/blockchainedu/benweb`
 
-2. Move into the directory `cd setlife-react-node-boilerplate`
+2. Move into the directory `cd benweb`
 
 3. Install dependencies `npm install` 
 

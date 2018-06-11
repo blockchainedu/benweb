@@ -7,11 +7,16 @@
     .NavLinkItem {
         .flex;
         .column;
+        .sizePadding(0, 0.5);
+        .transition(0.2s, color);
         > * {
             .flex-center;
         }
         h6 {
             .smallFont;
+        }
+        &:hover {
+            color: fade(@primary, 50%);
         }
     }
 }

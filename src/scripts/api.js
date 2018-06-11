@@ -1,10 +1,10 @@
 import React from 'react';
-import { API_ROOT } from '../constants';
+import { API_ROOT, API_ROOT_GRAPH } from '../constants';
 
 export default {
     graphStringify(json) {
         json = JSON.stringify(json);
-        return json.replace(/\"([^(\")"]+)\":/g,'$1:');
+        return json.replace(/\"([^(\")"]+)\":/g, '$1:');
     },
     get(route, query) {
         return (
@@ -50,7 +50,7 @@ export default {
     },
     graph(graphData) {
         return (
-            fetch(API_ROOT + 'graph', {
+            fetch(API_ROOT_GRAPH, {
                 method: 'POST',
                 xhrFields: {
                     withCredentials: true
