@@ -1,5 +1,4 @@
 export const validateEmail = (values) => {
-    console.log('validateEmail')
     const errors = {};
     const err = 'A valid email address is required';
 
