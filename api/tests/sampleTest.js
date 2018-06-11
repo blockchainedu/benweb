@@ -1,5 +1,5 @@
-var sampleModule = require('../modules/sampleModule');
+// var sampleModule = require('../modules/sampleModule');
 
-sampleModule.publicFunction2({
-    testProperty: 'testValue'
-});
+// sampleModule.publicFunction2({
+//     testProperty: 'testValue'
+// });
