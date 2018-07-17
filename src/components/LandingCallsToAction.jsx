@@ -7,7 +7,7 @@ import Button from './Button';
 
 class LandingCallsToAction extends Base {
     handleJoinBen() {
-        window.open('https://bit.ly/BENdiscord', '_blank')
+        window.open('https://airtable.com/shrDmye4iS7IsoyTN', '_blank')
     }
     render() {
         return (

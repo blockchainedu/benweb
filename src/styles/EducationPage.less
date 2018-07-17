@@ -13,10 +13,22 @@
     > section {
         height: @sectionHeight;
     }
+
+    .Button {
+        margin: @largeRem auto;
+        max-width: 15rem;
+    }
+
+
 }
 
 @media screen and (min-width: @sm) {
     .EducationPage {
-        
+
+        .airtable-embed {
+            .sizePadding(3, 4);
+            width: 100%;
+            height: 80%;
+        }
     }
 }
