@@ -20,7 +20,14 @@
         top: 0;
     }
     > section {
-        height: @pageHeight;
         .column;
+    }
+}
+
+@media screen and (min-width: @sm) {
+    .LandingPage {
+        > section {
+            height: @pageHeight;
+        }
     }
 }

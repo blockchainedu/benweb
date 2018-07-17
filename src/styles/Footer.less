@@ -4,9 +4,10 @@
     width: 100%;
     background-color: @light-blue;
 
+    .sizePadding(4, 0);
     .features-container {
         .flex;
-        .row-nowrap;
+        .column;
         .align-center;
         .sizePadding(3, 3);
         > div {
@@ -27,6 +28,9 @@
 
 @media screen and (min-width: @sm) {
     .Footer {
-        
+        .sizePadding(0, 0);
+        .features-container {
+            .row-nowrap;
+        }
     }
 }
