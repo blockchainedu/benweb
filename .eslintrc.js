@@ -1,4 +1,8 @@
 module.exports = {
+    "parser": "babel-eslint",
+    "ecmaFeatures": {
+        "classes": true
+    },
     'extends': 'airbnb',
     'rules': {
         'arrow-body-style': ['off'],

@@ -31,6 +31,9 @@ class ContactInfoPanel extends Base {
                     <a href='https://bit.ly/BENdiscord' className='social-link'>
                         <i className='fab fa-discord'/>
                     </a>
+                    <a href='https://github.com/blockchainedu' className='social-link'>
+                        <i className='fab fa-github'/>
+                    </a>
                 </ul>
             </div>
         );
