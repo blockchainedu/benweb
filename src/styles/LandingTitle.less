@@ -1,5 +1,4 @@
 .LandingTitle {
-    .sizePadding(3, 10);
     .sizeMargin();
     text-align: center;
     .flex-center;
@@ -9,12 +8,17 @@
         .sizeMargin(2, 0);
     }
     .animated-tagline {
-        .row-nowrap;
+        .column;
+        .align-center;
     }
 }
 
 @media screen and (min-width: @sm) {
     .LandingTitle {
         
+        .sizePadding(3, 10);
+        .animated-tagline {
+            .row-nowrap;
+        }
     }
 }
