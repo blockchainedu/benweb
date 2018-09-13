@@ -1,5 +1,6 @@
 .PageTitle {
-    .sizePadding(5, 1);
+    .sizePadding(5, 3);
+    padding-bottom: @baseRem;
     text-align: center;
     .divider {
         height: 4px;
@@ -12,6 +13,7 @@
 
 @media screen and (min-width: @sm) {
     .PageTitle {
+        padding-bottom: @baseRem;
         h6 {
             max-width: 30vw;
             margin: auto;

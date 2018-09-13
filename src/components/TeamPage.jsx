@@ -24,19 +24,31 @@ class TeamPage extends Base {
             <div className='TeamPage'>
                 <section>
                     <PageTitle
-                        header='Awesome Team'
-                        description='Meet the amazing team behind this project and find out more about how we work.'
+                        header='Team'
+                        description={'Reach out to us if you\'d like to get involved'}
                     />
                 </section>
 
                 <div className='team-container'>
                     <PageTitle
-                        header='The Executive Team'
+                        header='BEN Global Directors'
                         description={''}
                     />
-                    <div className='members-container'>
+                    <iframe className='airtable-embed' src='https://airtable.com/embed/shrXe7Vh9oN5slJqi?backgroundColor=orange' frameBorder='0'/>
+                    <PageTitle
+                        header='BEN National Directors'
+                        description={''}
+                    />
+                    <iframe className='airtable-embed' src='https://airtable.com/embed/shrf8DerO83sAxnbr?backgroundColor=orange' frameBorder='0'/>
+                    <PageTitle
+                        header='BEN Advisors'
+                        description={''}
+                    />
+                    <iframe className='airtable-embed' src='https://airtable.com/embed/shrHWnY9fMHf8uLxQ?backgroundColor=orange' frameBorder='0'/>
+                    {/*<div className='members-container'>
                         {this.renderMemberTiles()}
-                    </div>
+                    </div>*/}
+
                 </div>
                 
                 <Footer/>

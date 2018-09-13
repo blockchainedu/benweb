@@ -12,4 +12,8 @@ const PageTitle = ({ header, description }) => {
     );
 }
 
+PageTitle.defaultProps = {
+    description: ''
+}
+
 export default PageTitle

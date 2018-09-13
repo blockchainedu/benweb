@@ -1,9 +1,43 @@
 .NavigationBar {
-    .sizePadding(0, 1);
+    background-color: @transparent;
+    position: fixed;
+    &.opened {
+        z-index: 10;
+        background-color: @white;
+    }
+
+    .Icon {
+        .sizePadding(1, 1);
+    }
+
+    .nav-container {
+        background-color: @transparent;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+
+        &.opened {
+            opacity: 1;
+            pointer-events: all;
+            height: 100vh;
+            width: 100vw;
+            top: @largeRem * 2;
+            left: 0;
+            .align-center;
+            .column;
+            .NavLinkItem {
+                .sizePadding(1, 0);
+                color: @accent;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: @sm) {
     .NavigationBar {
+        .Icon {
+            .hidden
+        }
         .sizePadding(0, 10);
         .row-nowrap;
 
@@ -30,10 +64,13 @@
             background-position: center;
             height: @navBarHeight;
             width: @navBarHeight * 2;
+            cursor: pointer;
         }
 
         .nav-container {
-            .flex-shrink;
+            opacity: 1;
+            pointer-events: all;
+            position: relative;
             .row-nowrap;
             .align-center;
         }
