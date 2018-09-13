@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'react-router/lib/Link';
 
-const NavLinkItem = (props) => {
+const NavLinkItem = ({ onClick, route, text }) => {
     return (
-        <div className='NavLinkItem'>
-            <Link to={props.route}>
-                <h6>{props.text}</h6>
+        <div className='NavLinkItem' onClick={onClick}>
+            <Link to={route}>
+                <h6>{text}</h6>
             </Link>
         </div>
     );

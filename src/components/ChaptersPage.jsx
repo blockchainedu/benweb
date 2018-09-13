@@ -1,27 +1,28 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { push } from 'react-router-redux';
 
 import Base from './Base';
 import Button from './Button';
 import Footer from './Footer';
 import PageTitle from './PageTitle';
 
-class EducationPage extends Base {
+class ChaptersPage extends Base {
     handleResourceClick = () => {
-        window.open('https://airtable.com/shr1SL2dLmLCl2DQB', '_blank')
+        this.props.goToChapterSignup()
     }
     render() {
         return (
-            <div className='EducationPage'>
+            <div className='ChaptersPage'>
                 <PageTitle
-                    header='Resources to learn about blockchain'
+                    header='BEN Chapters'
                     description={
                         <Button onClick={this.handleResourceClick}>
-                            <p>Add a resource to our educational repository</p>
+                            <p>{'Can\'t find a chapter near you? Start a BEN Chapter'}</p>
                         </Button>
                     }
                 />
-                <iframe className='airtable-embed' src='https://airtable.com/embed/shrpt8lHSZz1nc3LH?backgroundColor=pink&layout=card&viewControls=on' frameBorder='0'></iframe>
+                <iframe className='airtable-embed' src='https://airtable.com/embed/shro1MPtZgd9Ivi72?backgroundColor=orange&viewControls=on' frameBorder='0'/>
                 <Footer/>
             </div>
         );
@@ -35,7 +36,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
+        goToChapterSignup: () => dispatch(push('/chapter-signup'))
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(EducationPage);
+export default connect(mapStateToProps, mapDispatchToProps)(ChaptersPage);

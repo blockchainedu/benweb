@@ -7,30 +7,45 @@ export const CONTACT_INFO = {
 export const NAVIGATION = {
     items: [
         {
-            text: 'Home',
-            routes: ['/'],
-            imageUrl: null
-        },
-        {
             text: 'About',
             routes: ['/about'],
             imageUrl: null
         },
         {
-            text: 'Team',
-            routes: ['/team'],
-            imageUrl: null
-        },
-        {
-            text: 'Education',
-            routes: ['/education'],
+            text: 'Events',
+            routes: ['/events'],
             imageUrl: null
         },
         {
             text: 'Donate',
             routes: ['/donate'],
             imageUrl: null
-        }
+        },
+        {
+            text: 'Resources',
+            routes: ['/resources'],
+            imageUrl: null
+        },
+        {
+            text: 'Find a Chapter',
+            routes: ['/about/chapters'],
+            imageUrl: null
+        },
+        {
+            text: 'Team',
+            routes: ['/about/team'],
+            imageUrl: null
+        },
+        {
+            text: 'Supporters',
+            routes: ['/about/supporters'],
+            imageUrl: null
+        },
+        {
+            text: 'For Current Chapters',
+            routes: ['/current-chapters'],
+            imageUrl: null
+        },
     ]
 }
 

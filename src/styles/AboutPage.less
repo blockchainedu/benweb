@@ -11,13 +11,16 @@
     background-size: cover;
 
     > section {
-        height: @sectionHeight;
+        min-height: 40vh;
         .align-center;
     }
 }
 
 @media screen and (min-width: @sm) {
     .AboutPage {
+        > section {
+            height: @sectionHeight;
+        }
         .PageSection {
             .row-nowrap;
             .justify-space-around;

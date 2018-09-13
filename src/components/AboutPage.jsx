@@ -59,6 +59,10 @@ class AboutPage extends Base {
                     />
                 </PageSection>
                 
+                <PageTitle
+                    header='BEN National Chapters'
+                />
+                <iframe className='airtable-embed' src='https://airtable.com/embed/shro1MPtZgd9Ivi72?backgroundColor=orange&viewControls=on' frameBorder='0'/>
                 <Footer/>
             </div>
         );

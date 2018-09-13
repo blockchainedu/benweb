@@ -11,7 +11,7 @@
     background-size: cover;
 
     > section {
-        height: @sectionHeight;
+        min-height: 40vh;
         .align-center;
     }
 
@@ -34,6 +34,12 @@
 
 @media screen and (min-width: @sm) {
     .TeamPage {
-        
+        > section {
+            height: @sectionHeight;
+        }
+
+        .airtable-embed {
+            height: 110%;
+        }
     }
 }
