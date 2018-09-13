@@ -5,20 +5,16 @@ import MetricsTile from './MetricsTile';
 
 const METRICS = [
     {
-        name: 'Years',
-        number: '4'
-    },
-    {
         name: 'Countries',
-        number: '60+'
+        number: '96+'
     },
     {
-        name: 'Campuses',
-        number: '300+'
+        name: 'Universities',
+        number: '213+'
     },
     {
         name: 'Members',
-        number: '2400+'
+        number: '4000+'
     }
 ]
 export default class FeaturedMetrics extends Base {
